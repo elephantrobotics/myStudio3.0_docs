@@ -16,4 +16,4 @@
   - [联系我们](./3-firmware/3.7-firmware_email.md)
 - [设置](./4-setting/4.1-setting_main.md)
 - [扩展](./5-plugins/README.md)
-  - [网络服务器扩展](./5-plugins/1-socket/README.md)
+  - [网络服务器扩展](./5-plugins/1-socket/5.1.1-socketfirstuse.md)
