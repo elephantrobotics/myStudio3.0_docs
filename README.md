@@ -13,7 +13,7 @@
   - [Video tutorial](./3-firmware/3.4-firmware_video.md)
   - [Github](./3-firmware/3.5-firmware_github.md)
   - [Online mall](./3-firmware/3.6-firmware_shop.md)
-  - [contact us](./3-firmware/3.7-firmware_email.md)
+  - [Contact us](./3-firmware/3.7-firmware_email.md)
 - [Set up](./4-setting/4.1-setting_main.md)
 - [Expand](./5-plugins/README.md)
   - [Web server extension](./5-plugins/1-socket/5.1.1-socketfirstuse.md)
