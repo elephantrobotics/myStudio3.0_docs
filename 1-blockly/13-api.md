@@ -123,7 +123,7 @@
 
   - 关节角度值
 
-    
+
 
 **读取单关节角度**
 
@@ -571,7 +571,7 @@
   - `transpoint`：圆弧途径点`(list)`：[x,y,z,rx,ry,rz]
   - `endpoint`：圆弧结束点`(list)`：[x,y,z,rx,ry,rz]
 
-  
+
 
 
 
@@ -764,7 +764,7 @@
 
 - **接口说明**：将当前位置设置为零，设置当前位置值为`2048`。
 
-  
+
 
 
 
@@ -1092,4 +1092,4 @@
 
 ---
 
-[← Previous Page](./11-pumpUse.md) | [Next Page →](./13-Q%26A.md)
+[← 上一页](./11-pumpUse.md) | [下一页 →](../2-quickmove/2.1-quickmovefirstuse.md)

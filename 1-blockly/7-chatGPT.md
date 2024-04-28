@@ -8,7 +8,6 @@
 >
 >申请API Key 地址：[API keys - OpenAI API](https://platform.openai.com/api-keys)
 >
->
 
 
 
@@ -94,7 +93,7 @@
 
 ---
 
-[← Previous Page](./6-useCoords.md) | [Next Page →](./8-singleStep.md)
+[← 上一页](./6-useCoords.md) | [下一页 →](./8-singleStep.md)
 
 
 

@@ -4,7 +4,7 @@
 
 **blockly** 是一个完全可视化模块化编程软件，属于图形化编程语言。
 
-**blockly** 在功能/设计上和 MIT 的儿童编程语言 Scratch 类似。
+**blockly** 在功能和设计上与 MIT 的儿童编程语言 Scratch 类似。
 
 使用 **blockly** 的时候，用户可以通过拖曳模块，来构建代码逻辑，过程很像搭积木。
 
@@ -13,7 +13,8 @@
 代码生成到文本框的过程，就是用户在 **blockly** 里拖曳的过程。
 
 
-**跳转到各部分：**
+
+**关于 blockly 的使用介绍有以下几个章节：**
 
 - [blockly 首次使用](1-blocklyFirstUse.md)
 - [blockly 界面介绍](2-interfaceDescription.md)
@@ -26,11 +27,11 @@
 - [程序控制](9-program.md)
 - [自适应夹爪的使用](10-gripperUse.md)
 - [吸泵的使用](11-pumpUse.md)
-- - [吸泵的使用](12-dragTeach.md)
+- [吸泵的使用](12-dragTeach.md)
 - [积木块 API 详解](13-api.md)
 - [Q&A](14-Q&A.md)
 
 ---
 
-[← Previous Page]() | [Next Page →](./1-myBlocklyFirstUse.md)
+[← 上一页](../0-community/README.md) | [下一页 →](./1-myBlocklyFirstUse.md)
 

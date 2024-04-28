@@ -85,4 +85,4 @@
 
 ---
 
-[← Previous Page](./9-program.md) | [Next Page →](./11-pumpUse.md)
+[← 上一页](./9-program.md) | [下一页 →](./11-pumpUse.md)

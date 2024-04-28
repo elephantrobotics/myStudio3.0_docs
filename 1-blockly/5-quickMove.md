@@ -43,9 +43,9 @@
 
 
 
-对于其它功能，请查阅快速移动
+对于其它功能，请查阅[快速移动](../2-quickmove/2.1-quickmovefirstuse.md)
 
 
 ---
 
-[← Previous Page](./4-autofill.md) | [Next Page →](./6-useCoords.md)
+[← 上一页](./4-autofill.md) | [下一页 →](./6-useCoords.md)

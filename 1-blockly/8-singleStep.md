@@ -25,7 +25,7 @@
 
 
 
-**第三步：**点击 **单步执行** 按钮，会打开运行面板，点击面板中的`运行`按钮开始执行代码。同时，观察机械臂。
+**第三步：**点击 **单步执行** 按钮，会打开运行面板，点击面板中的`运行`按钮开始执行代码。同时，观察机械臂运动变化。
 
 <img src="..\resources\1-blockly\images\singleStep\run_plane.png" style="zoom:80%;" />
 
@@ -36,7 +36,7 @@
 
 ---
 
-[← Previous Page](./7-chatGPT.md) | [Next Page →](./9-program.md)
+[← 上一页](./7-chatGPT.md) | [下一页 →](./9-program.md)
 
 
 

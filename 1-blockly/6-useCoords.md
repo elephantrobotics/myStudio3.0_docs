@@ -10,7 +10,7 @@
 
 
 
-本章学习如何使用坐标来控制机械臂。
+本章介绍如何使用坐标来控制机械臂。
 
 
 
@@ -24,7 +24,7 @@
 - **接口说明**：设置机械臂多坐标
 - **参数**：
   - values：[X,Y,Z,RX,RY,RZ]
-  - speed：速度 值为 1-100
+  - speed：速度，范围为 1-100
 
 
 
@@ -40,11 +40,11 @@
 
     <img src="..\resources\1-blockly\images\useCoords\init_pos.png" />
 
-    
+
 
     打开`运行面板`，运行代码。
 
-    
+
 
 #### 坐标移动
 
@@ -69,4 +69,4 @@
 
 ---
 
-[← Previous Page](./5-quickMove.md) | [Next Page →](./7-chatGPT.md)
+[← 上一页](./5-quickMove.md) | [下一页 →](./7-chatGPT.md)

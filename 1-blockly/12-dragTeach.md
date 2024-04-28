@@ -44,4 +44,4 @@
 
 ---
 
-[← Previous Page](./11-pumpUse.md) | [Next Page →](./13-api.md)
+[← 上一页](./11-pumpUse.md) | [下一页 →](./13-api.md)

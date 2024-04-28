@@ -31,11 +31,9 @@
 
 
 
-
-
 至于接下来如何操作，由您自己决定吧！
 
 
 ---
 
-[← Previous Page](./8-singleStep.md) | [Next Page →](./10-gripperUse.md)
+[← 上一页](./8-singleStep.md) | [下一页 →](./10-gripperUse.md)
