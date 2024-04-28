@@ -39,9 +39,9 @@
 - 暂停录制：机械臂关节刹车锁紧，不可被人力拖动
 - 等待 5 秒
 - 播放轨迹：机械臂开始执行刚才录制的轨迹
-- 等待 10 秒（相当于播放 10 秒钟轨迹）
+- 等待 10 秒（相当于播放刚才录制的 10 秒钟轨迹）
 
 
 ---
 
-[← Previous Page](./10-gripperUse.md) | [Next Page →](./12-api.md)
+[← Previous Page](./11-pumpUse.md) | [Next Page →](./13-api.md)

@@ -26,8 +26,9 @@
 - [程序控制](9-program.md)
 - [自适应夹爪的使用](10-gripperUse.md)
 - [吸泵的使用](11-pumpUse.md)
-- [积木块 API 详解](12-api.md)
-- [Q&A](13-Q&A.md)
+- - [吸泵的使用](12-dragTeach.md)
+- [积木块 API 详解](13-api.md)
+- [Q&A](14-Q&A.md)
 
 ---
 
