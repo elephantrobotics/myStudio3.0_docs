@@ -10,7 +10,15 @@ This chapter introduces how to debug the building block code through the `Run Pa
 
 Edit a program that controls the color change of the LED light at the end of the robotic arm
 
+
+
+use `Set Color`block：
+
 <img src="..\resources\1-blockly\images\program\block.png"  />
+
+
+
+Full code:
 
 <img src="..\resources\1-blockly\images\program\code.png"  />
 
@@ -24,7 +32,7 @@ The program has been paused. The next instruction to be executed appears `mc.set
 
 at this time:
 
-- If you click the `Restore` button, the program will automatically execute;
+- If you click the `Recover` button, the program will automatically execute;
 
 - If you click the `One-Step` button, the program will execute the next instruction, which is `mc.set_color(255,0,0)`;
 - If you click the `Stop` button, the program will be terminated;

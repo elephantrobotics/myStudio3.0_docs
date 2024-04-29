@@ -10,7 +10,7 @@ Let's write a small case to introduce the basic use of `blockly`.
 
 **Case description**: Control the robotic arm to return to zero, then control a joint to move to a position of 20 degrees, and then return to zero.
 
-**Step 1:** First click the `Attitude` button to open the attitude view, where you can see the angle and coordinate information of the robotic arm.
+**Step 1:** First click the `Posture` button to open the attitude view, where you can see the angle and coordinate information of the robotic arm.
 
 <img src="..\resources\1-blockly\images\littleCase\1.png" style="zoom:80%;" />
 
@@ -21,37 +21,43 @@ Let's write a small case to introduce the basic use of `blockly`.
 
 **Step 2:** Start programming
 
-Open the first-level category `Motion Control` in the toolbox, select the second-level category `Angle & Coordinates`, and drag the `Set Full Angle` building block to the workspace.
+Open the first-level category `Motion control` in the toolbox, select the second-level category `Angle & Coord`, and drag the `Send Angles` building block to the workspace.
 
 This building block is used to control the movement of each joint of the robotic arm to a given angle. The default movement speed is 20.
 
-Since `Mercury A1` except `J6` has a zero point angle of `90`, the zero point angle values of other joints are `0`, so the `J6` of the building block needs to be modified to 90.
+Since `Mercury A1` except `J6` has a zero point angle of `90`, the zero point angle values of other joints are `0`, so the `J6` of the building block needs to be modified to `90`.
 
-<img src="..\resources\1-blockly\images\littleCase\3.png" style="zoom: 67%;" />
+<img src="..\resources\1-blockly\images\littleCase\3.png" style="zoom:80%;" />
 
-<img src="..\resources\1-blockly\images\littleCase\send_coords.png" style="zoom: 67%;" />
+<img src="..\resources\1-blockly\images\littleCase\send_coords.png" style="zoom: 80%;" />
 
-Open the first-level category `Basic Programming` in the toolbox, select the second-level category `Time`, drag the `Sleep` building block to the workspace, and set the sleep time to 3 seconds.
+
+
+Open the first-level category `Basic Programming` in the toolbox, select the second-level category `Time`, drag the `Sleep` building block to the workspace, and set the sleep time to `3` seconds.
 
 The sleep time of 3 seconds means: the program waits for 3 seconds before continuing. Why wait 3 seconds? Because it is necessary to ensure that the robot arm completes the first command action before executing other subsequent actions.
 
-<img src="..\resources\1-blockly\images\littleCase\5.png" style="zoom: 67%;" />
+<img src="..\resources\1-blockly\images\littleCase\5.png" style="zoom: 80%;" />
 
-<img src="..\resources\1-blockly\images\littleCase\6.png" style="zoom: 67%;" />
 
-Copy the `Set Full Angle` block and change the `J1` angle to 20:
 
-- Click with the mouse to select the `Set Full Angle` building block in the workspace;
-- Hold down Ctrl + C on the keyboard to copy the `Set Full Angle` building block;
-- Press Ctrl + V on your keyboard to paste the `Set Full Angle` block
+<img src="..\resources\1-blockly\images\littleCase\6.png" style="zoom: 80%;" />
+
+Copy the `Sent Angles` block and change the `J1` angle to 20:
+
+- Click with the mouse to select the `Sent Angles` building block in the workspace;
+- Hold down Ctrl + C on the keyboard to copy the `Sent Angles` building block;
+- Press Ctrl + V on your keyboard to paste the `Sent Angles` block
 - Modify the new building block `J1` to 20;
-- Drag the building block to connect it with the `Sleep' building block;
+- Drag the building block to connect it with the `Sleep` building block;
 
 <img src="..\resources\1-blockly\images\littleCase\7.png" style="zoom: 67%;" />
 
-Similar to the above operation, copy the `sleep` building block and set the sleep time to `3` seconds;
 
-Copy the first `Set Full Angle` block in the workspace again;
+
+Similar to the above operation, copy the `Sleep` building block and set the sleep time to `3` seconds;
+
+Copy the first `Sent Angles` block in the workspace again;
 
 The complete code is as follows:
 
@@ -63,13 +69,15 @@ The complete code is as follows:
 >
 > - Wait 3 seconds (the machine will finish at zero)
 >
-> - Move joint one (J1) to a position of 20 degrees
+> - Move joint 1 to a position of 20 degrees
 >
 > - wait 3 seconds
 >
 > - Control the robotic arm to return to zero point
 
 Finally, click the `Run Panel` button. After opening the panel, click the `Run` button to start executing the code.
+
+<img src="..\resources\1-blockly\images\littleCase\open_run_plane.png" style="zoom: 67%;" />
 
 <img src="..\resources\1-blockly\images\littleCase\run.png" style="zoom: 67%;" />
 

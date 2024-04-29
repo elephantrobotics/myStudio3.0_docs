@@ -12,7 +12,7 @@ This chapter introduces how to use `blockly` to control the suction pump connect
 
 #### API display
 
-<img src="..\resources\1-blockly\images\pump\code.png" style="zoom: 64%;" />
+<img src="..\resources\1-blockly\images\pump\code.png" style="zoom: 67%;" />
 
 <img src="..\resources\1-blockly\images\pump\function.png" style="zoom: 67%;" />
 
