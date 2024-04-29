@@ -1,8 +1,8 @@
 # myStudio3.0_docs
 
-## [机型选择]()
+## [机器选择](./0-community/1-robot_choose.md)
 
-## [功能选择]()
+## [功能](./0-community/2-robot_function.md)
 
 - [blockly](./1-blockly/README.md)
 - [快速移动](./2-quickmove/2.1-quickmovefirstuse.md)
