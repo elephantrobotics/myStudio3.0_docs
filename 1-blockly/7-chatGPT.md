@@ -93,7 +93,7 @@
 
 ---
 
-[← 上一页](./6-useCoords.md) | [下一页 →](./8-singleStep.md)
+[← Previous page](./6-useCoords.md) | [Next page →](./8-singleStep.md)
 
 
 

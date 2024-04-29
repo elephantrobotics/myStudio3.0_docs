@@ -160,6 +160,6 @@
 
 ---
 
-[← 上一页](./2-interface_description.md) | [下一页 →](./4-autofill.md)
+[← Previous page](./2-interface_description.md) | [Next page →](./4-autofill.md)
 
 

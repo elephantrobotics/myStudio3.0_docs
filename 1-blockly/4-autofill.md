@@ -41,4 +41,4 @@
 
 
 
-[← 上一页](./3-littleCase.md) | [下一页 →](./5-quickMove.md)
+[← Previous page](./3-littleCase.md) | [Next page →](./5-quickMove.md)

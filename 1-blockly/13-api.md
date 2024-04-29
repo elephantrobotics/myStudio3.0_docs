@@ -1,26 +1,28 @@
-# 积木块接口详解
+# Detailed explanation of building block interface
 
-本章介绍 `blockly` 中积木块的含义与输入项的解释。
+This chapter introduces the meaning of building blocks and the explanation of input items in `blockly`.
 
-> 基础编程分类中的积木块不在本章讨论范围中
+> The building blocks in the basic programming classification are beyond the scope of this chapter
 
 
 
-**一些说明：**
+**Some notes:**
 
-1、接口解释中的 python 原型，[在这里](https://github.com/elephantrobotics/pymycobot/blob/main/pymycobot/mercury_api.py)可以找到。
+1、Python Prototypes in interface explanation, [here](https://github.com/elephantrobotics/pymycobot/blob/main/pymycobot/mercury_api.py)can be found.
 
-2、有返回值的接口需要搭配`基础编程`分类下`文本`分类中的`输出`积木块使用。运行代码时，`输出`积木块会再打印出返回值。
+2、Interfaces with return values need to be used with the `Print` building block in the `Text` category under the `Basic Program` category. When running the code, the `Print` block will print out the return value.
 
-比如：
 
-**错误使用**：
+
+**for example:**
+
+**Wrong way to use**:
 ![](..\resources\1-blockly\images\api\error.png)
 
 
 
 
-**正确使用**：
+**Correct way to use**:
 ![](..\resources\1-blockly\images\api\currect.png)
 
 
@@ -28,46 +30,44 @@
 
 
 
-## 运动控制
+## Motion control category
 
 
 
-### 拖动示教分类接口
+### Drag & Teach category
 
 ![](..\resources\1-blockly\images\api\drag_teach.png)
 
 
 
-**录制轨迹**
+**Recording track**
 
-- **python接口原型**：`drag_tech_save()`
+- **Python Prototype**: `drag_tech_save()`
 
-- **接口说明**：使用后，机械臂会放松，可以被用户拖动，并且会实时记录用户拖动的轨迹。
-
-
-
-
-**播放轨迹**
-
-- **python接口原型**：`drag_tech_execute()`
-
-- **接口说明**：播放用户录制的轨迹
+- **Interface Description**: After use, the robotic arm will relax and can be dragged by the user, and the user's drag trajectory will be recorded in real time.
 
 
 
+**Execute track**
 
-**暂停录制**
+- **Python Prototype**: `drag_tech_execute()`
 
-- **python接口原型**：`drag_tech_pause()`
-- **接口说明**：暂停录制。机械臂会锁紧，不可被拖动。
-
+- **Interface Description**: Play user-recorded tracks
 
 
-**清除轨迹**
 
-- **python接口原型**：`drag_teach_clean()`
+**Pause recording**
 
-- **接口说明**：清除用户录制的轨迹
+- **Python Prototype**: `drag_tech_pause()`
+- **Interface Description**: Pause recording. The robotic arm will be locked and cannot be dragged.
+
+
+
+**Track clear**
+
+- **Python Prototype**: `drag_teach_clean()`
+
+- **Interface Description**: Clear user-recorded tracks
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-### 角度 & 坐标 分类
+### Angle & Coord category
 
 ![](..\resources\1-blockly\images\api\angle&coords.png)
 
@@ -88,202 +88,201 @@
 
 
 
-**设置全角度**
+**Send Angles**
 
-- **python接口原型**：`send_angles(angles,speed)`
-- **接口说明**：将所有角度发送至机械臂。
+- **Python Prototype**: `send_angles(angles,speed)`
+- **Interface Description**: Send all angles to robot arm.
 
-- **参数**
-  - `angles`：坐标值列表（`List[float]`）
-  - `速度`: (`int`) 0 ~ 100
+- **Params**
+  - `angles`: coords(`List[float]`)
+  - `speed`: (`int`) 0 ~ 100
 
 
 
-**设置坐标**
+**Set Coord**
 
-- **python接口原型**：`send_coords(coords,speed,mode)`
+- **Python Prototype**: `send_coords(coords,speed,mode)`
 
-- **接口说明**：将所有坐标发送至机械臂。
+- **Interface Description**: Send all coordinates to the robot arm.
 
-- **参数**
+- **Params**
 
-  - `coords`：坐标值列表（`List[float]`）
+  - `coords`: coords(`List[float]`)
 
   - `speed`: (`int`) 0 ~ 100
 
 
 
-**获取所有角度**
+**Get Angles**
 
-- **python接口原型**：`get_angles()`
+- **Python Prototype**: `get_angles()`
 
-- **接口说明**：获取所有关节的度数
+- **Interface Description**: Get the degrees of all joints
 
-- **返回**：
+- **Return**:
 
-  - 关节角度值
+  - joint angle value
 
 
 
-**读取单关节角度**
+**Get Joint Angle**
 
-- **python接口原型**：`get_angle(id)`
+- **Python Prototype**: `get_angle(id)`
 
-- **接口说明**：获取机器人单关节角度控制
+- **Interface Description**: Obtain robot single joint angle control
 
-- **参数**
-  - `id`：关节 ID：1-7
+- **Params**
+  - `id`: joint id: 1-7
 
-  - `degree`：角度值
+  - `degree`: degree
 
 
 
 
-**获取所有坐标**
+**Get Coords**
 
-- **python接口原型**：`get_coords()`
+- **Python Prototype**: `get_coords()`
 
-- **接口说明**：
+- **Interface Description**:
 
-  - 获取笛卡尔坐标
+  - Get Cartesian coordinates
 
 
 
-**设置单关节角度**
+**Set Joint Angle**
 
-- **python接口原型**：`send_angle(id, degree, speed)`
+- **Python Prototype**: `send_angle(id, degree, speed)`
 
-- **接口说明**：机器人单关节角度控制
+- **Interface Description**: Robot single joint angle control
 
-- **参数**
+- **Params**
 
-  - `id`：关节 ID：1-7
+  - `id`: joint id: 1-7
 
-  - `degree`：角度值
+  - `degree`: degree
 
-  - `speed`：速度
+  - `speed`: speed
 
 
 
-**设置单个坐标**
+**Send Coord**
 
-- **python接口原型**：`send_coord(id, value, speed)`
-- **接口说明**：机器人单坐标控制
+- **Python Prototype**: `send_coord(id, value, speed)`
+- **Interface Description**: Robot single coordinate control
 
-- **参数**
-  - `id`：坐标：1-6分别对应x、y、z、rx、ry、rz
-  - `value`：坐标值
-  - `speed`：速度
+- **Params**
+  - `id`: Coordinates: 1-6 correspond to x, y, z, rx, ry, rz respectively
+  - `value`: coord value
+  - `speed`: speed
 
 
 
-**角度是否到达位置**
+**Angles is in position**
 
-- **python接口原型**：`is_in_position([j1,j2,j3,j4,j5,j6,j7],0)`
+- **Python Prototype**: `is_in_position([j1,j2,j3,j4,j5,j6,j7],0)`
 
-- **接口说明**：检查机器角度是否到达指定位置
+- **Interface Description**: Check whether the machine angle reaches the specified position
 
-- **参数**：
-  - `j1`：j1角度值
-  - `j2`：j2角度值
-  - `j3`：j3角度值
-  - `j4`：j4角度值
-  - `j5`：j5角度值
-  - `j6`：j6角度值
-  - `j7`：j7角度值
+- **Params**:
+   - `j1`: j1 angle value
+   - `j2`: j2 angle value
+   - `j3`: j3 angle value
+   - `j4`: j4 angle value
+   - `j5`: j5 angle value
+   - `j6`: j6 angle value
+   - `j7`: j7 angle value
 
 
+- **Return**:
 
-- **返回**：
+  - 0: Did not reach the specified location
 
-  - 0：未到达指定位置
+  - 1: Arrive at designated location
 
-  - 1：到达指定位置
 
 
 
 
+**Coords is in position**
 
-**坐标是否到达位置**
+- **Python Prototype**: `is_in_position([x,y,z,rx,ry,rz],1)`
 
-- **python接口原型**：`is_in_position([x,y,z,rx,ry,rz],1)`
+- **Interface Description**: Check whether the machine coord reaches the specified position
 
-- **接口说明**：检查机器角度是否到达指定位置
+- **Params**:
+   - x coordinate value
 
-- **参数**：
-  - x 坐标值
+   - y coordinate value
 
-  - y 坐标值
+   - z coordinate value
 
-  - z 坐标值
+   - rx coordinate value
 
-  - rx坐标值
+   - ry coordinate value
 
-  - ry坐标值
+   - rz coordinate value
 
-  - rz坐标值
 
 
+- **Return**:
 
-- **返回**：
+  - 0: Did not reach the specified location
+  - 1: Arrive at designated location
 
-  - 0：未到达指定位置
-  - 1：到达指定位置
 
 
+**Pause**
 
-**暂停**
+- **Python Prototype**: `pause`
+- **Interface Description**: Enter the pause state, suspending all movements of the machine.
 
-- **python接口原型**：`pause`
-- **接口说明**：进入暂停状态，暂停机器的所有运动。
 
 
 
 
+**Resume**
 
-**恢复**
+- **Python Prototype**: `resume`
+- **Interface Description**: Exit the pause state and resume machine movement.
 
-- **python接口原型**：`resume`
-- **接口说明**：退出暂停状态，恢复机器运动。
 
 
+**Stop**
 
-**停止**
+- **Python Prototype**: `stop`
+- **Interface Description**: Stop all movement of the machine.
 
-- **python接口原型**：`stop`
-- **接口说明**：停止机器的一切运动。
 
 
+**Is Paused**
 
-**是否已暂停**
+- **Python Prototype**: `is_paused`
+- **Interface Description**: Detect whether the machine is in paused state.
+- **Return**:
+   - 0: Not in pause state
+   - 1: In paused state
+   - -1: Error
 
-- **python接口原型**：`is_paused`
-- **接口说明**：检测机器是否处于暂停状态。
-- **返回**：
-  - 0：不处于暂停状态
-  - 1：处于暂停状态
-  - -1：错误
 
 
+**Is Moving**
 
-**检测是否在运动**
+- **Python Prototype**: `is_moving(id, value, speed)`
+- **Interface Description**: Detect whether the machine is moving.
+- **Return**:
+  - 0: The machine is not running
+  - 1: The machine is running
+  - -1: Machine data error
 
-- **python接口原型**：`is_moving(id, value, speed)`
-- **接口说明**：检测机器是否在移动。
-- **返回**：
-  - 0：机器不运转
-  - 1：机器正在运转
-  - -1：机器数据错误
 
 
 
 
 
 
+### Jog control category
 
-### 点动控制 分类
-
-所谓点动控制即控制机械臂往正或反方向运动，知道运动到限位为止
+The so-called jog control is to control the mechanical arm to move in the forward or reverse direction until the movement reaches the limit.
 
 <img src="..\resources\1-blockly\images\api\jog.png" style="zoom:200%;" />
 
@@ -293,173 +292,169 @@
 
 
 
-**点动控制关节**
+**Jog Angle**
 
-- **python接口原型**：`jog_angle（joint_id,direction,speed）`
+- **Python Prototype**: `jog_angle（joint_id,direction,speed）`
 
-- **接口说明**：点动控制角度。控制关节往正或反方向运动，直到运动到关节限位。
+- **Interface Description**: Jog control angle. Control the joint to move in the forward or reverse direction until the movement reaches the joint limit.
 
-- **参数**
-  - `joint_id`: (`int`) 关节id：1 ~ 7
-  - `direction`：方向：1 / 0
-  - `speed`: 速度：0 ~ 100
-
-
-
-
-
-**点动控制坐标**
-
-- **python接口原型**：`jog_coord（coord_id,direction,speed）`
-
-- **接口说明**：点动控制坐标。控制坐标往正或反方向运动，直到运动到关节限位。
-
-- **参数**
-
-  - `coord_id`: 坐标id：1 ~ 6（对应 X、Y、Z、RX、RY、RZ）
-
-  - `direction`: `0` - 减少，`1` - 增加
-  - `speed`: 速度0 ~ 100
+- **Params**
+   - `joint_id`: (`int`) joint id: 1 ~ 7
+   - `direction`: direction: 1 / 0
+   - `speed`: speed: 0 ~ 100
 
 
 
 
 
-**角度步进模式**
+**Jog Coord**
 
-- **python接口原型**：`jog_increment_angle(joint_id,value,speed)`
+- **Python Prototype**: `jog_coord（coord_id,direction,speed）`
 
-- **接口说明**：角度步进模式。控制关节在当前角度值下再加上给定的 value  值
+- **Interface Description**: Jog control coordinates. Control the coordinates to move in the forward or reverse direction until the movement reaches the joint limit.
 
-- **参数**
-  - `joint_id`: (`int`) 关节id：1 ~ 7
-  - `value`：增量值
-  - `speed`: 速度：0 ~ 100
-
-
-
-
-
-**坐标步进模式**
-
-- **python接口原型**：`jog_increment_coord(coord_id,value,speed)`
-
-- **接口说明**：坐标步进模式。控制坐标在当前值下再加上给定的 value  值
-
-- **参数**
-
-  - `coord_id`: 坐标id：1 ~ 6（对应 X、Y、Z、RX、RY、RZ）
-
-  - `value`: 增量值
-  - `speed`: 速度0 ~ 100
+- **Params**
+   - `coord_id`: coordinate id: 1 ~ 6 (corresponding to X, Y, Z, RX, RY, RZ)
+   - `direction`: `0` - decrease, `1` - increase
+   - `speed`: speed0 ~ 100
 
 
 
 
 
-### 坐标系设置分类
+**Jog Angle Increment**
+
+- **Python Prototype**: `jog_increment_angle(joint_id,value,speed)`
+
+- **Interface Description**: Angle step mode. Control the joint to add the given value to the current angle value
+
+- **Params**
+   - `joint_id`: (`int`) joint id: 1 ~ 7
+   - `value`: incremental value
+   - `speed`: speed: 0 ~ 100
+
+
+
+
+
+**Jog Coord Increment**
+
+- **Python Prototype**: `jog_increment_coord(coord_id,value,speed)`
+
+- **Interface Description**: Coordinate stepping mode. Controls the coordinates to be added to the current value by the given value
+
+- **Params**
+
+   - `coord_id`: coordinate id: 1 ~ 6 (corresponding to X, Y, Z, RX, RY, RZ)
+
+   - `value`: incremental value
+   - `speed`: speed0 ~ 100
+
+
+
+
+
+### Coord. system category
 
 ![](..\resources\1-blockly\images\api\coordsystem.png)
 
-**获取工具坐标系**
+**Get Tool coordinate system**
 
-- **python接口原型**：`get_tool_reference()`
-- **接口说明**：获取工具坐标系。
-- **返回**：
+- **Python Prototype**: `get_tool_reference()`
+- **Interface Description**: Get the tool coordinate system.
+- **Return**:
   - `(list)` [x，y，z，rx，ry，rz]
 
 
 
 
 
-**设置工具坐标系**
+**Set Tool Coord**
 
-- **python接口原型**：`set_tool_reference(coords)`
-- **接口说明**：设置工具坐标系。
-- **参数**：
+- **Python Prototype**: `set_tool_reference(coords)`
+- **Interface Description**: Set the tool coordinate system.
+- **Params**:
   - `(list)` [x, y, z, rx, ry, rz]。
 
 
 
-**获取世界坐标系**
+**Get World Coord**
 
-- **python接口原型**：`get_world_reference()`
-- **接口说明**：获取世界坐标系。
-- **返回**：
+- **Python Prototype**: `get_world_reference()`
+- **Interface Description**: Get world coordinate system
+- **Return**:
   - `(list)` [x, y, z, rx, ry, rz]。
 
 
 
 
 
-**设置世界坐标系**
+**Set World Coord**
 
-- **python接口原型**：`set_world_reference(coords)`
+- **Python Prototype**: `set_world_reference(coords)`
 
-- **接口说明**：设置世界坐标系。
+- **Interface Description**: Set world coordinate system
 
-- **参数**：
+- **Params**:
   - `coords`: (`list`) [x, y, z, rx, ry, rz]。
 
 
 
-**获取基坐标系**
+**Get Reference Frame**
 
-- **python接口原型**：`get_reference_frame()`
-- **接口说明**：获取基础坐标系。
-- **返回**：
-  - 0 - 基础
-  - 1 - 工具。
-
-
-
-**设置基坐标系**
-
-- **python接口原型**：`set_reference_frame(rftype)`
-
-- **接口说明**：设置基础坐标系。
-
-- **参数**：
-  - `rftype`：0 - 基础 1 - 工具。
+- **Python Prototype**: `get_reference_frame()`
+- **Interface Description**: Get the base coordinate system.
+- **Return**:
+  - 0 - Base
+  - 1 - Tool。
 
 
 
-**获取移动类型**
+**Set Reference Frame**
 
-- **python接口原型**：`get_movement_type()`
-- **接口说明**：获取运动类型。
-- **返回**：1 - movel，0 - moveJ。
+- **Python Prototype**: `set_reference_frame(rftype)`
 
-
-
-**设置移动类型**
-
-- **python接口原型**：`set_movement_type(move_type)`
-
-- **接口说明**：设置运动类型。
-
-- **参数**：
-  - `move_type`：1 - movel，0 - moveJ。
+- **Interface Description**: Set the base coordinate system.
+- **Params**:
+  - `rftype`: 0 - Base 1 - Tool。
 
 
 
-**获取末端坐标系**
+**Get Movement Type**
 
-- **python接口原型**：`get_end_type()`
-- **接口说明**：获取末端坐标系。
-- **返回**：0 - 法兰，1 - 工具。
+- **Python Prototype**: `get_movement_type()`
+- **Interface Description**: Get the motion type.
+- **Return**: 1 - movel，0 - moveJ。
 
 
 
-**设置末端坐标系**
+**Set Movement Type**
 
-- **python接口原型**：`set_end_type(end)`
+- **Python Prototype**: `set_movement_type(move_type)`
 
-- **接口说明**：设置结束坐标系。
+- **Interface Description**: Set the motion type.
 
-- **参数**：
-  - `end`：0 - 法兰，1 - 工具。
+- **Params**:
+  - `move_type`: 1 - movel，0 - moveJ。
 
+
+
+**Get End Coord**
+
+- **Python Prototype**: `get_end_type()`
+- **Interface Description**: Get the end coordinate system.
+- **Return**: 0 - flange, 1 - tool.
+
+
+
+**Set End Coord**
+
+- **Python Prototype**: `set_end_type(end)`
+
+- **Interface Description**: Set the end coordinate system.
+
+- **Params**:
+  - `end`: 0 - flange, 1 - tool.
 
 
 
@@ -468,83 +463,80 @@
 
 
 
-### 关节限位设置 分类
+
+### Set joint limits category
 
 ![](..\resources\1-blockly\images\api\joint_limit.png)
 
 
 
-**获取关节最小角度**
+**Get Joint Min Angle**
 
-- **python接口原型**：`get_joint_min_angle(joint_id)`
-- **接口说明**：获取指定关节的最小运动角度
-- **参数**：`joint_id`：(`int`)
-- **返回**：
-  - 角度值（`float`）
-
-
-
-**获取关节最大角度**
-
-- **python接口原型**：`get_joint_max_angle(joint_id)`
-- **接口说明**：获取指定关节的最大运动角度
-- **参数**：`joint_id`：(`int`)
-- **返回**：
-  - 角度值（`float`）
+- **Python Prototype**: `get_joint_min_angle(joint_id)`
+- **Interface Description**: Get the minimum motion angle of the specified joint
+- **Params**: `joint_id`: (`int`)
+- **Return**:
+  - angles(`float`)
 
 
 
-**设置关节最小值角度**
+**Get Joint Max Angle**
 
-- **python接口原型**：`set_joint_min(id, angle)`
-- **接口说明**：设置指定关节的最小角度。
-
-- **参数**：
-  - `关节id`
-
-  - `角度`
+- **Python Prototype**: `get_joint_max_angle(joint_id)`
+- **Interface Description**: Get the maximum motion angle of the specified joint
+- **Params**: `joint_id`: (`int`)
+- **Return**:
+  - angles`float`)
 
 
 
-**设置关节最大角度**
+**Set Joint Min Angle**
 
-- **python接口原型**：`set_joint_max(id, angle)`
-- **接口说明**：设置指定关节的最大角度。
+- **Python Prototype**: `set_joint_min(id, angle)`
+- **Interface Description**: Sets the minimum angle of the specified joint.
 
-- **参数**：
-  - `关节id`
-  - `角度`
+- **Params**:
+  - `joint id`
+  - `angle`
 
+
+
+**Set Joint Max Angle**
+
+- **Python Prototype**: `set_joint_max(id, angle)`
+- **Interface Description**: Sets the maximum angle of the specified joint.
+
+- **Params**:
+  - `joint id`
+  - `angle`
 
 
 
 
 
 
-### 设置底座IO状态分类
+### Base IO status category
 
 ![](..\resources\1-blockly\images\api\basic_io.png)
 
-**设置底座引脚输出**
+**Set basic pin output**
 
-- **python接口原型**：`set_basic_output(id,state)`
-- **接口说明**：设置底座引脚输出
-- **参数**：
-  - `id`：引脚号
-  - `state`：选择输出状态
-
-
-
-**获取底座引脚输入**
-
-- **python接口原型**：`set_basic_output(id)`
-- **接口说明**：获取底座引脚输入
-- **参数**：
-  - `id`：引脚号
-- **返回**：
-  - 引脚输入状态
+- **Python Prototype**: `set_basic_output(id,state)`
+- **Interface Description**: Set base pin output
+- **Params**:
+   - `id`: pin number
+   - `state`: select output state
 
 
+
+**Get basic pin output**
+
+- **Python Prototype**: `set_basic_output(id)`
+- **Interface Description**: Get base pin output
+- **Params**:
+  - `id`: pin
+- **Return**:
+  - Pin input status
 
 
 
@@ -552,7 +544,9 @@
 
 
 
-### 圆弧运动 分类
+
+
+### Circular motion category
 
 ![](..\resources\1-blockly\images\api\circle_move.png)
 
@@ -560,18 +554,16 @@
 
 
 
-**圆弧轨迹运动**
+**Arc**
 
-- **python接口原型**：`write_move_c(transpoint,endpoint,speed)`
+- **Python Prototype**: `write_move_c(transpoint,endpoint,speed)`
 
-- **接口说明**：圆弧轨迹运动
+- **Interface Description**: Arc trajectory motion
 
-- **参数**：
+- **Params**:
 
-  - `transpoint`：圆弧途径点`(list)`：[x,y,z,rx,ry,rz]
-  - `endpoint`：圆弧结束点`(list)`：[x,y,z,rx,ry,rz]
-
-
+  - `transpoint`: Arc way point`(list)`: [x,y,z,rx,ry,rz]
+  - `endpoint`: Arc end point`(list)`: [x,y,z,rx,ry,rz]
 
 
 
@@ -579,102 +571,92 @@
 
 
 
-### 关节点击设置 分类
+
+
+### Joint motor setting category
 
 ![](..\resources\1-blockly\images\api\motor.png)
 
 
 
-**关节电机是否开启**
-
-- **python接口原型**：`is_servo_enable(servo_id)`
-
-- **接口说明**：判断舵机是否已开启
-
-- **参数**：`servo_id` (`int`) 1 ~ 7
-
-- **返回**：
-
-  - `0`：未开启
-
-  - `1`：已启用
-
-  - `-1`: 错误
+**Is Joint Motor Enable**
+- **Python Prototype**: `is_servo_enable(servo_id)`
+- **Interface Description**: Determine whether the servo is turned on
+- **Params**: `servo_id` (`int`) 1 ~ 7
+- **Return**:
+   - `0`: not enabled
+   - `1`: enabled
+   - `-1`: error
 
 
 
-**是否所有关节已开启**
-
-- **python接口原型**：`is_all_servo_enable()`
-
-- **接口说明**：判断所有舵机是否已开启
-
-- **返回**：
-
-  - `0`：非都已开启
-  - `1`：都已启用
-  - `-1`：错误
+**Is All Joint Motors Enable**
+- **Python Prototype**: `is_all_servo_enable()`
+- **Interface Description**: Determine whether all servos are turned on
+- **Return**:
+   - `0`: Not all are enabled
+   - `1`: both are enabled
+   - `-1`: error
 
 
 
-**设置关节电机零点**
+**Set Joint Motor Calibration**
 
-- **python接口原型**：`set_servo_calibration(servo_no)`
-- **接口说明**：校准关节执行器以当前位置为角度零点。
-
-- **参数**：
-  - `servo_no`：铰接式舵机的序列号，1 - 7。
+- **Python Prototype**: `set_servo_calibration(servo_no)`
+- **Interface Description**: Calibrate the joint actuator with the current position as the angle zero point.
+- **Params**:
+  - `servo_no`: Servo number, 1 - 7.
 
 
 
 
 
-**关节电机掉电**
+**Release Joint Motor**
 
-- **python接口原型**：`release_servo(servo_id)`
-- **接口说明**：指定关节电机断电
-- **参数**：`servo_id`：1 ~ 7
-
-
-
-**关节电机上电**
-
-- **python接口原型**：`focus_servo(servo_id)`
-- **接口说明**：指定关节电机上电
-- **参数**：`servo_id`：1 ~ 7
+- **Python Prototype**: `release_servo(servo_id)`
+- **Interface Description**: The specified joint motor is powered off
+- **Params**: `servo_id`: 1 ~ 7
 
 
 
+**Focus Joint Motor**
 
-
-**关节电机打开/关闭刹车**
-
-- **python接口原型**：`joint_brake(servo_id,status)`
-- **接口说明**：设置指定关节电机刹车状态
-- **参数**：
-  - `servo_id`：关节电机 1 ~ 7
-  - `status`：打开/关闭
-
-
-
-**读取零位编码器值**
-
-- **python接口原型**：`get_zero_pos`
-- **接口说明**：读取零位编码器值
-- **返回**：
-  - 零位编码器值
+- **Python Prototype**: `focus_servo(servo_id)`
+- **Interface Description**: Power on the specified joint motor
+- **Params**: `servo_id`: 1 ~ 7
 
 
 
 
 
-**是否已设置零位**
+**Joint Motor Close/Open brake**
 
-- **python接口原型**：`is_init_calibrated`
-- **接口说明**：判断是否已设置零位
-- **返回**：
-  - `True`：已设置零位
-  - `False`：未设置零位
+- **Python Prototype**: `joint_brake(servo_id,status)`
+- **Interface Description**: Set the brake state of the specified joint motor
+- **Params**:
+   - `servo_id`: joint motor 1 ~ 7
+   - `status`: open/closed
+
+
+
+**Read zero encoder value**
+
+- **Python Prototype**: `get_zero_pos`
+- **Interface Description**: Read the zero encoder value
+- **Return**:
+  - Zero encoder value
+
+
+
+
+
+**Whether the zero position has been set**
+
+- **Python Prototype**: `is_init_calibrated`
+- **Interface Description**: Determine whether zero position has been set
+- **Return**:
+   - `True`: zero bit set
+   - `False`: zero bit not set
 
 
 
@@ -682,87 +664,85 @@
 
 
 
-### 关节电机状态 分类
+### Joint motors status category
 
 ![](..\resources\1-blockly\images\api\motor_status.png)
 
 
 
-**获取各关节电机速度**
+**Get Joint Motors Velocity**
 
-- **python接口原型**：`get_servo_speeds()`
-- **接口说明**：获取各关节电机速度
-- **返回**：
-  - 各关节电机速度
-
-
-
-**获取各关节电机的状态**
-
-- **python接口原型**：`get_servo_status()`
-- **接口说明**：获取各关节电机的状态
-- **返回**：
-  - 各关节电机状态
+- **Python Prototype**: `get_servo_speeds()`
+- **Interface Description**: Get Joint Motors Velocity
+- **Return**:
+  - speeds
 
 
 
-**获取各关节电机电流**
+**Get Joint Motors Status**
 
-- **python接口原型**：`get_servo_currents()`
-- **接口说明**：获取各关节电机电流
-- **返回**：
-  - 各关节电机电流
-
-
+- **Python Prototype**: `get_servo_status()`
+- **Interface Description**: Get the status of each joint motor
+- **Return**:
+  - status of each joint motor
 
 
 
-**关节电机异常恢复 重置所有关节电机**
+**Get Joint Motor Currents**
 
-- **python接口原型**：`servo_restore(254)`
-- **接口说明**：关节异常恢复 重置所有关节电机
+- **Python Prototype**: `get_servo_currents()`
+- **Interface Description**: Get the motor current of each joint
+- **Return**:
+  - Motor current of each joint
 
 
 
 
 
-**关节电机异常恢复**
+**Restore All Joint Motor**
 
-- **python接口原型**：`servo_restore(joint_id)`
-- **接口说明**：关节电机异常恢复
-- **参数**:
-  - `joint_id`：关节id：1-7
+- **Python Prototype**: `servo_restore(254)`
+- **Interface Description**: Joint motor abnormality recovery Reset all joint motors
 
 
 
 
 
-## 末端工具
+**Restore Joint Motor**
+
+- **Python Prototype**: `servo_restore(joint_id)`
+- **Interface Description**: Joint motor abnormal recovery
+- **Params**:
+  - `joint_id`: Joint id: 1-7
 
 
 
-### 夹爪控制 分类
+
+
+## End-Effector Tool category
+
+
+
+### Gripper Control category
 
 ![](..\resources\1-blockly\images\api\gripper.png)
 
 
 
-**设置 Pro 自适应夹爪**
+**Set Pro Adaptive Gripper**
 
-- **python接口原型**：`set_gripper_enabled(flag)`
-- **接口说明**：设置 Pro 自适应夹爪
-- **参数**：
-  - `flag`：使能  /  释放
-
-
+- **Python Prototype**: `set_gripper_enabled(flag)`
+- **Interface Description**: Setting up the Pro Adaptive Gripper
+- **Params**:
+  - `flag`: Enabled  /  Release
 
 
 
-**夹爪零位校准**
 
-- **python接口原型**：`set_gripper_calibration()`
 
-- **接口说明**：将当前位置设置为零，设置当前位置值为`2048`。
+**Set Gripper Calibration**
+- **Python Prototype**: `set_gripper_calibration()`
+- **Interface Description**: Set the current position to zero and set the current position value to `2048`.
 
 
 
@@ -770,101 +750,92 @@
 
 
 
-**设置夹爪状态**
-
-- **python接口原型**：`set_gripper_state(flag, speed, mode)`
-
-- **接口说明**：设置夹爪开关状态
-
-- **参数**
-  - `flag`：状态：打开 /关闭
-  - `speed` ：速度: 0 ~ 100
-  - `mode`：夹爪类型
+**Set Gripper State**
+- **Python Prototype**: `set_gripper_state(flag, speed, mode)`
+- **Interface Description**: Set the gripper switch state
+- **Params**
+   - `flag`: status: open/closed
+   - `speed` : speed: 0 ~ 100
+   - `mode`: gripper type
 
 
 
-**设置夹爪值**
-
-- **python接口原型**：`set_gripper_value(值，速度，模式)`
-
-- **接口说明**：设置夹爪值
-
-- **参数**
-  - `value`：值：0 ~ 100
-  - `speed`：速度：0 ~ 100
-  - `mode`：夹爪类型
+**Get Gripper Value**
+- **Python Prototype**: `set_gripper_value(值，speed，模式)`
+- **Interface Description**: get gripper value
+- **Params**
+   - `value`: value: 0 ~ 100
+   - `speed`: speed: 0 ~ 100
+   - `mode`: gripper type
 
 
 
-**设置夹爪模式**
+**Set Gripper Mode**
 
-- **python接口原型**：`set_gripper_mode(status)`
-- **接口说明**：设置夹爪模式。
-- **参数**：
-  - `status` ：透传模式 / 端口模式。
+- **Python Prototype**: `set_gripper_mode(status)`
+- **Interface Description**: Set the gripper mode.
+- **Params**:
+  - `status` : Transparent Transmission / Port Mode.
 
 
 
-**获取夹爪模式**
+**Get Gripper Mode**
 
-- **python接口原型**：`get_gripper_mode()`
+- **Python Prototype**: `get_gripper_mode()`
 
-- **接口说明**：获取夹爪模式
+- **Interface Description**: get gripper mode
 
-- **返回**：
-  - `0`：透传模式
-  - `1`：端口模式
+- **Return**:
+  - `0`: Transparent Transmission
+  - `1`: Port Mode
 
 
 
 
 
-### 末端 IO 控制 分类
+### Atom IO category
 
 ![](..\resources\1-blockly\images\api\atom_io.png)
 
 
 
-**设置IO值**
+**setting IO value**
 
-- **python接口原型**：`set_digital_output(id,state)`
-- **接口说明**：设置IO值
-- **参数**
-  * `id`：io序列号
-
-  * `state`：选择状态0或1
-
+- **Python Prototype**: `set_digital_output(id,state)`
+- **Interface Description**: Set IO value
+- **Params**
+   * `id`: io serial number
+   * `state`: select state 0 or 1
 
 
-**读取IO值**
 
-- **python接口原型**：`get_digital_input(id)`
-- **接口说明**：读取IO值
-- **参数**
-  * `id`：io序列号
+**Get IO value**
 
+- **Python Prototype**: `get_digital_input(id)`
+- **Interface Description**: Read IO value
+- **Params**
+  * `id`: io serial number
 
 
 
 
 
 
-### Atom 设置
+
+### Atom settings category
 
 ![](..\resources\1-blockly\images\api\set_rgb.png)
 
 
 
-**设置颜色**
+**Set Color**
 
-- **python接口原型**：`set_color(red=0,green=0,blue=0)`
-- **接口说明**：设置末端LED灯的颜色
-- **参数**:
-  - `red`：红色值 0 - 255
-  - `green`：绿色值 0 -255
-  - `blue`：蓝色值 （0- 255）
-
-
+- **Python Prototype**: `set_color(red=0,green=0,blue=0)`
+- **Interface Description**: Set the color of the end LED light
+- **Params**:
+  - `red`: Red 0 - 255
+  - `green`: Green 0 -255
+  - `blue`: Blue （0- 255）
 
 
 
@@ -872,58 +843,58 @@
 
 
 
-## 状态检测
 
-### 设备运行状态
+
+## Status Monitor category
+
+### Operation Status category
 
 ![](..\resources\1-blockly\images\api\system.png)
 
-**上电**
+**Power On**
 
-- **python接口原型**：`power_on()`
-- **接口说明**：机器上电，可以控制机器
-
-
-
-**仅上电**
-
-- **python接口原型**：`power_on_only()`
-- **接口说明**：机器上电，机器不可控
+- **Python Prototype**: `power_on()`
+- **Interface Description**: The machine is powered on and can be controlled
 
 
 
-**断电**
+**Power on only**
 
-- **python接口原型**：`power_off()`
-- **接口说明**：机器断点
-
-
-
-**是否上电**
-
-- **python接口原型**：`is_power_on()`
-- **接口说明**：检查机械臂是否已上电
-
-- **返回**：
-
-  - `1`: 开机
-  - `0`：关闭电源
-  - `-1`: 错误
+- **Python Prototype**: `power_on_only()`
+- **Interface Description**: When the machine is powered on, the machine is uncontrollable
 
 
 
-**释放所有舵机**
+**Power Off**
 
-- **python接口原型**：`release_all_servos()`
-
-- **接口说明**：设置机械臂为自由运动模式
-
+- **Python Prototype**: `power_off()`
+- **Interface Description**: the machine is powered off
 
 
-**机器人打开力矩输出**
 
-- **python接口原型**：`focus_all_servos()`
-- **接口说明**：设置机械臂为自由运动模式
+**Is Power On**
+
+- **Python Prototype**: `is_power_on()`
+- **Interface Description**: Check whether the robot arm is powered on
+
+- **Return**:
+   - `1`: power on
+   - `0`: power off
+   - `-1`: error
+
+
+
+**Release All Servos**
+
+- **Python Prototype**: `release_all_servos()`
+
+- **Interface Description**: Set the robot arm to free motion mode
+
+
+
+**Focus all servos**
+- **Python Prototype**: `focus_all_servos()`
+- **Interface Description**: Robot opens torque output
 
 
 
@@ -931,51 +902,47 @@
 
 
 
-**上位机错误安全状态**
-
-- **python接口原型**：`get_robot_status()`
-
-- **接口说明**：获取上位机错误安全状态
-
-- **返回**：
-
-  - 状态信息
+**Obtain the host computer error status**
+- **Python Prototype**: `get_robot_status()`
+- **Interface Description**: Obtain the error safety status of the host computer
+- **Return**:
+  - status information
 
 
 
 
 
-**读取关节异常次数**
+**Read joint exception times**
 
-- **python接口原型**：`get_comm_error_counts(joint_id,type)`
-- **接口说明**：获取关节异常次数
-- **参数**：
-  - `joint_id`：关节id：1-7
-  - `type`：异常类型
-- **返回**：
-  - 异常次数
-
-
+- **Python Prototype**: `get_comm_error_counts(joint_id,type)`
+- **Interface Description**: Get the number of joint abnormalities
+- **Params**:
+   - `joint_id`: joint id: 1-7
+   - `type`: exception type
+- **Return**:
+   - Number of exceptions
 
 
 
-**设置位置超差值**
-
-- **python接口原型**：`set_pos_over_shoot(value)`
-
-- **接口说明**：设置位置超差值
-
-- **参数**：
-  - `value`：超差值
 
 
+**Set the position deviation value**
 
-**读取位置超差值**
+- **Python Prototype**: `set_pos_over_shoot(value)`
 
-- **python接口原型**：`get_pos_over_shoot`
-- **接口说明**：读取位置超差值
-- **返回**：
-  - 位置超差值
+- **Interface Description**: Set the position deviation value
+
+- **Params**:
+  - `value`: position deviation value
+
+
+
+**Read position out of tolerance value**
+
+- **Python Prototype**: `get_pos_over_shoot`
+- **Interface Description**: Read position out-of-tolerance value
+- **Return**:
+  - Position out of tolerance value
 
 
 
@@ -985,63 +952,61 @@
 
 
 
-### 系统与产品信息
+### System Information category
 
 ![](..\resources\1-blockly\images\api\system_info.png)
 
 
 
-**获取主控信息**
+**Get Master Control Info**
 
-- **python接口原型**：`get_system_version()`
-- **接口说明**：获取主控版本信息
-- **返回**：
-  - 返回主控版本信息
-
-
-
-**获取末端固件版本**
-
-- **python接口原型**：`get_atom_version()`
-- **接口说明**：获取末端固件版本
-- **返回**：
-  - 返回末端固件版本
+- **Python Prototype**: `get_system_version()`
+- **Interface Description**: Get Master Control Info
+- **Return**:
+  - Master Control Info
 
 
 
+**Get End Firmware Info**
 
-
-**获取机器人型号**
-
-- **python接口原型**：`get_robot_type()`
-- **接口说明**：获取机器人型号
-- **返回**：
-  - 获取机器人型号
-
-
-
-**机器超限位回零**
-
-- **python接口原型**：`over_limit_return_zero`
-- **接口说明**：机器超限位回零
+- **Python Prototype**: `get_atom_version()`
+- **Interface Description**: Get the terminal firmware version
+- **Return**:
+   - End firmware version
 
 
 
-**获取错误信息**
-
-- **python接口原型**：`get_error_information()`
-- **接口说明**：获取错误信息
-- **返回**：
-  - 获取错误信息
 
 
+**Get robot type**
 
-**清除错误信息**
+- **Python Prototype**: `get_robot_type()`
+- **Interface Description**: Get the robot model
+- **Return**:
+   - Get the robot model
 
-- **python接口原型**：`clear_error_information()`
-- **接口说明**：清除错误信息
 
 
+**Go zero when joints over limit**
+
+- **Python Prototype**: `over_limit_return_zero`
+- **Interface Description**: The machine returns to zero after exceeding the limit
+
+
+
+**Get Error Information**
+
+- **Python Prototype**: `get_error_information()`
+- **Interface Description**: Get error message
+- **Return**:
+  - Get error message
+
+
+
+**Clear Error Information**
+
+- **Python Prototype**: `clear_error_information()`
+- **Interface Description**: Clear error message
 
 
 
@@ -1049,31 +1014,33 @@
 
 
 
-## 其它设置
+
+
+## Other category
 
 
 
-### 零空间偏转角
+### Deflection angle category
+
+![](..\resources\1-blockly\images\api\zero_space_pos.png)
+
+**Get the value of deflect angle in null space**
+
+- **Python Prototype**: `get_solution_angles()`
+- **Interface Description**: Get the zero space deflection angle value
+- **Return值**:
+  - `J1_angle_low`: -90  ~ +90
+  - `J1_angle_high`: -90  ~ +90
 
 
 
-**获取零空间偏转角数值**
+**Set the value of deflect angle in null space**
 
-- **python接口原型**：`get_solution_angles()`
-- **接口说明**：获取零空间偏转角数值
-- **返回值**：
-  - `J1_angle_low`：-90  ~ +90
-  - `J1_angle_high`：-90  ~ +90
-
-
-
-**设置零空间偏转角数值**
-
-- **python接口原型**：`set_solution_angles(J1_angle,speed)`
-- **接口说明**：获取零空间偏转角数值
-- **参数**：
-  - `J1_angle`：-90  ~ +90
-  - `speed`：1-100
+- **Python Prototype**: `set_solution_angles(J1_angle,speed)`
+- **Interface Description**: Get the zero space deflection angle value
+- **Params**:
+  - `J1_angle`: -90  ~ +90
+  - `speed`: 1-100
 
 
 
@@ -1092,4 +1059,4 @@
 
 ---
 
-[← 上一页](./11-pumpUse.md) | [下一页 →](../2-quickmove/2.1-quickmovefirstuse.md)
+[← Previous page](./11-pumpUse.md) | [Next page →](../2-quickmove/2.1-quickmovefirstuse.md)

@@ -36,7 +36,7 @@
 
 ---
 
-[← 上一页](./7-chatGPT.md) | [下一页 →](./9-program.md)
+[← Previous page](./7-chatGPT.md) | [Next page →](./9-program.md)
 
 
 

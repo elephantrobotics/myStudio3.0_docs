@@ -69,4 +69,4 @@
 
 ---
 
-[← 上一页](./5-quickMove.md) | [下一页 →](./7-chatGPT.md)
+[← Previous page](./5-quickMove.md) | [Next page →](./7-chatGPT.md)

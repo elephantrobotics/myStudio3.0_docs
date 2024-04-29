@@ -36,4 +36,4 @@
 
 ---
 
-[← 上一页](./8-singleStep.md) | [下一页 →](./10-gripperUse.md)
+[← Previous page](./8-singleStep.md) | [Next page →](./10-gripperUse.md)

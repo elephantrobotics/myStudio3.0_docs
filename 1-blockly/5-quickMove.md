@@ -48,4 +48,4 @@
 
 ---
 
-[← 上一页](./4-autofill.md) | [下一页 →](./6-useCoords.md)
+[← Previous page](./4-autofill.md) | [Next page →](./6-useCoords.md)

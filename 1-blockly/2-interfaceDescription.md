@@ -25,4 +25,4 @@
 
 ---
 
-[← 上一页](./1-myBlocklyFirstUse.md) | [下一页 →](./3-littleCase.md)
+[← Previous page](./1-myBlocklyFirstUse.md) | [Next page →](./3-littleCase.md)

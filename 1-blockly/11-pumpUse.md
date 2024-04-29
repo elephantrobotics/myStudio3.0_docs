@@ -64,4 +64,4 @@
 
 ---
 
-[← 上一页](./10-gripperUse.md) | [下一页 →](./12-dragTeach.md)
+[← Previous page](./10-gripperUse.md) | [Next page →](./12-dragTeach.md)
