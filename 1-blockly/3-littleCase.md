@@ -77,6 +77,8 @@ The complete code is as follows:
 
 Finally, click the `Run Panel` button. After opening the panel, click the `Run` button to start executing the code.
 
+<img src="..\resources\1-blockly\images\littleCase\open_run_plane.png" style="zoom: 67%;" />
+
 <img src="..\resources\1-blockly\images\littleCase\run.png" style="zoom: 67%;" />
 
 After the code is completed, click the panel `X` to close the panel

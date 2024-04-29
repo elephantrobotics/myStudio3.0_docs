@@ -17,13 +17,15 @@ Click the `ChatGPT` button to open the GPT panel
 
 <img src="..\resources\1-blockly\images\chatGPT\open.png" style="zoom:80%;" />
 
-
-
-After opening the chatGPT panel, click Settings, enter your API Key, and click Save
-
 <img src="..\resources\1-blockly\images\chatGPT\enter.png" style="zoom:80%;" />
 
+
+
+After opening the chatGPT panel, click `Settings`, enter your API Key, and click `Save`
+
 <img src="..\resources\1-blockly\images\chatGPT\setting.png" style="zoom:80%;" />
+
+
 
 
   > myStudio only uses your API Key in the ChatGPT function module and does not use it for other purposes, nor does it upload your API Key to the server.
