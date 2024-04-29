@@ -57,7 +57,7 @@ Code generation completed
 
 
 #### If you don't want to enter text, you can use our speech recognition feature
-
+> Since `Mercury A1` does not have a built-in microphone, the recording function cannot be used in `Mercury A1`.
 
 
 Click the `Record` button (requires system microphone permission).
