@@ -1,44 +1,32 @@
-# 快速填入数据
+# Fill in data quickly
 
-*开始之前*
+_before the start_
 
-> *1、确保机器已上电*
+> _1. Make sure the machine is powered on_
 >
-> *2、确保机器连接正常*
+> _2. Make sure the machine connection is normal_
 
+This chapter introduces the `Quick Fill` function of building blocks.
 
+When a building block has too many data items, it would be too cumbersome to fill them in one by one.
+So for building blocks with too many data items filled in, we can use the quick fill function.
 
-本章介绍积木块的中 `快速填入` 功能。
+Currently, the building blocks that support quick filling are as follows:
 
-当一个积木块拥有过多的数据项，一个一个填入未免过于麻烦。
-于是对于数据项填入项过多的积木块，我们可以使用快速填入功能。
+<img src="..\resources\1-blockly\images\autofill\1.png" style="zoom: 67%;"/>
 
-目前支持快速填入的积木块有以下几个：
+### How to use quick fill
 
-<img  src="..\resources\1-blockly\images\autofill\1.png" style="zoom: 67%;"/>
+Take setting the `Set Full Angle` building block as an example. First, you need to select the building block, and then click the `Quick Fill' button in the building block.
 
+<img src="..\resources\1-blockly\images\autofill\click_autofill.png" style="zoom: 87%;"/>
 
+When the prompt box below appears on the page, the entry is successful.
 
-### 如何使用快速填入
+<img src="..\resources\1-blockly\images\autofill\fill_success.png" style="zoom: 87%;"/>
 
-以设置`设置全角度`积木块为例，首先需要选中积木块，然后点击积木块中的 `快速填入`按钮即可。
+If the following prompt box appears, please click the `Attitude` button to view the machine's angle and coordinates in the attitude panel. If the data is all zero, it is abnormal, please check the machine connection status.
 
-<img  src="..\resources\1-blockly\images\autofill\click_autofill.png" style="zoom: 87%;"/>
-
-当页面上出现下图提示框，即填入成功。
-
-<img  src="..\resources\1-blockly\images\autofill\fill_success.png" style="zoom: 87%;"/>
-
-
-
-
-
-如果出现以下提示框，请点击`姿态`按钮，在姿态面板查看机器的角度和坐标。如果数据都为零，则为异常，请检查机器连接状态。
-
-<img  src="..\resources\1-blockly\images\autofill\fill_error.png" style="zoom: 87%;"/>
-
-
-
-
+<img src="..\resources\1-blockly\images\autofill\fill_error.png" style="zoom: 87%;"/>
 
 [← Previous page](./3-littleCase.md) | [Next page →](./5-quickMove.md)

@@ -1,71 +1,54 @@
-# 学习使用坐标控制
+# Learn to use coordinate control
 
-*开始之前*
+_before the start_
 
-> *1、确保机器已上电*
+> _1. Make sure the machine is powered on_
 >
-> *2、确保机器连接正常*
+> _2. Make sure the machine connection is normal_
 >
-> *3、确保机器处于零位*
+> _3. Make sure the machine is in zero position_
 
+This chapter introduces how to use coordinates to control the robotic arm.
 
-
-本章介绍如何使用坐标来控制机械臂。
-
-
-
-### 主要涉及到的API：
+### Mainly involved APIs:
 
 <img src="..\resources\1-blockly\images\useCoords\send_coords.png" style="zoom: 67%;" />
 
-**设置坐标**
+**Set coordinates**
 
-- **原型**：`send_coords(values,speed)`
-- **接口说明**：设置机械臂多坐标
-- **参数**：
-  - values：[X,Y,Z,RX,RY,RZ]
-  - speed：速度，范围为 1-100
+- **Prototype**: `send_coords(values,speed)`
+- **Interface Description**: Set multiple coordinates of the robotic arm
+- **Parameters**:
+  - values: [X,Y,Z,RX,RY,RZ]
+  - speed: speed, range is 1-100
 
+### Small case
 
+#### Before using coordinate movement for the first time, some operations need to be performed:
 
-### 小案例
+- To return the robotic arm to the zero position, please refer to [Controlling the robotic arm to return to zero] (3-littleCase.md)
 
-#### 首次使用坐标移动前，需要执行的一些操作：
+- Set the initial attitude of the robot arm coordinate movement (the machine `J7` needs to be parallel to the ground)
 
-- 机械臂回到零位，可参考[控制机械臂回零](3-littleCase.md)
+  -As shown in the code below:
 
-- 设置机械臂坐标运动的初始姿态（机器`J7`需要与地面平行）
+     <img src="..\resources\1-blockly\images\useCoords\init_pos.png" />
 
-  - 如下图代码所示：
+  Open the `Run Panel` and run the code.
 
-    <img src="..\resources\1-blockly\images\useCoords\init_pos.png" />
+#### Coordinate movement
 
-
-
-    打开`运行面板`，运行代码。
-
-
-
-#### 坐标移动
-
-拖动一个`设置坐标`积木块到工作区，并点击积木块中的`快速填入`按钮填入数据，并将 `Z` 轴数据修改为 `400`
+Drag a `Set Coordinates' building block to the workspace, and click the `Quick Fill`button in the building block to fill in the data, and change the`Z`axis data to`400`
 
 <img src="..\resources\1-blockly\images\useCoords\auto_fill.png" style="zoom:67%;" />
 
-
-
-
-
-完整代码如下：
+The complete code is as follows:
 
 <img src="..\resources\1-blockly\images\useCoords\full_code.png" style="zoom: 80%;" />
 
-
-
-执行代码，整个过程观察到机械臂在上下移动
+Execute the code and observe the robot arm moving up and down throughout the process
 
 <img src="..\resources\1-blockly\images\useCoords\run_finish.png" style="zoom: 80%;" />
-
 
 ---
 
