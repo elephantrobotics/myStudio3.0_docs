@@ -1,27 +1,22 @@
-## blockly 主界面介绍
+## blockly main interface introduction
 
 <img src="..\resources\1-blockly\images\interface_description\1.png" style="zoom: 67%;" />
 
-
-
-
-
-| 序号 | 功能介绍                                                     |
-| :--- | ------------------------------------------------------------ |
-| 1    | 文件：可以进行 加载、保存、新建工作区 的操作；               |
-| 2    | 快速移动：用于快速控制机械臂运动；                           |
-| 3    | 返回：退出 `blockly`主界面；                                 |
-| 4    | ChatGPT：与 `chatGPT` 交互，利用 AI 自动生成 积木块；        |
-| 5    | 单步执行：选中某个积木块，可以单击该按钮，只执行当前选中的积木块； |
-| 6    | 运行面板：打开运行面板，在此面板可以运行、调试工作区代码；   |
-| 7    | 姿态：打开姿态页面，可以看到当前角度和坐标信息               |
-| 8    | 工具箱（toolbox）：提供构建好的积木块供用户使用；            |
-| 9    | 工作区校准：点击后 工作区（workspace）会回到原点；           |
-| 10   | 放大：放大 工作区（workspace）；                             |
-| 11   | 缩小：缩小 工作区（workspace）；                             |
-| 12   | 垃圾箱（trashcan）：可将工作区中的积木块拖动到此处删除，也支持从此处取出已删除的积木块； |
-| 13   | 工作区（workspace）：可将工具箱（toolbox）中的积木块拖动到此处 进行编程； |
-
+| Serial number | Function introduction                                                                                                                          |
+| :------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1             | File: You can load, save, and create a new workspace;                                                                                          |
+| 2             | Rapid movement: used to quickly control the movement of the robotic arm;                                                                       |
+| 3             | Return: exit `blockly` main interface;                                                                                                         |
+| 4             | ChatGPT: Interact with `chatGPT` and use AI to automatically generate building blocks;                                                         |
+| 5             | Single-step execution: Select a building block, you can click this button to execute only the currently selected building block;               |
+| 6             | Run panel: Open the run panel, where you can run and debug the workspace code;                                                                 |
+| 7             | Attitude: Open the attitude page and you can see the current angle and coordinate information                                                  |
+| 8             | Toolbox: Provides built building blocks for users to use;                                                                                      |
+| 9             | Workspace calibration: After clicking, the workspace will return to the origin;                                                                |
+| 10            | Zoom in: enlarge the workspace;                                                                                                                |
+| 11            | Zoom out: Reduce the workspace;                                                                                                                |
+| 12            | Trashcan: The building blocks in the workspace can be dragged here to be deleted, and deleted building blocks can also be taken out from here; |
+| 13            | Workspace: You can drag the building blocks in the toolbox here for programming;                                                               |
 
 ---
 
