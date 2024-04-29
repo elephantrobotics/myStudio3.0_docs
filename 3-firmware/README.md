@@ -1,23 +1,23 @@
-# 固件与应用
+# Firmware and Applications
 
-该页面包含了以下子功能页面：
+This page contains the following sub-function pages:
 
-- [通用固件](3.1-firmware_currency.md)
-- [功能应用](3.2-firmware_app.md)
-- [文档手册](3.3-firmware_docs.md)
-- [视频教程](3.4-firmware_video.md)
+- [Firmware](3.1-firmware_currency.md)
+- [Application](3.2-firmware_app.md)
+- [Document](3.3-firmware_docs.md)
+- [Tutorial](3.4-firmware_video.md)
 - [Github](3.5-firmware_github.md)
-- [在线商城](3.6-firmware_shop.md)
-- [联系我们](3.7-firmware_email.md)
+- [Shopping](3.6-firmware_shop.md)
+- [Contact](3.7-firmware_email.md)
 
-此页面所有功能有：
+All functions on this page are:
 
-1. 机器人主控固件的烧录
-2. 扩展插件的管理
-3. 产品使用手册的跳转链接
-4. 官方视频教程的跳转链接
-5. 官方GitHub的跳转链接
-6. 官方在线商城的跳转链接
-7. 意见反馈通道
+1. Burning of robot main control firmware
+2. Management of extension plug-ins
+3. Jump link to product manual
+4. Jump link to official video tutorial
+5. Official GitHub jump link
+6. Jump link to the official online mall
+7. Feedback channel
 
-页面详细说明请跳转到对应的子页面查看。
+For detailed page description, please jump to the corresponding sub-page to view.
