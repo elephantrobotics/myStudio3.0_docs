@@ -41,8 +41,7 @@
     <img src="..\resources\1-blockly\images\useCoords\init_pos.png" />
 
 
-
-    打开`运行面板`，运行代码。
+ 打开`运行面板`，运行代码。
 
 
 

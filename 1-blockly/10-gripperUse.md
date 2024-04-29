@@ -1,14 +1,14 @@
 # 夹爪的使用
 
-*开始之前*
-
-> *1、确保机器已上电*
+> *Before the start*
 >
-> *2、确保机器连接正常*
+> *1. Make sure the machine is powered on*
+>
+> *2. Make sure the machine connection is normal*
 
 
 
-本章介绍如何使用 `blockly` 控制连接到 `Mercury A1` 机械臂的自适应夹爪（如下图）
+This chapter introduces how to use `blockly` to control the adaptive gripper connected to the `Mercury A1` robotic arm (as shown below)
 
 <img src="..\resources\1-blockly\images\gripperUse\gripper.png"  />
 
@@ -17,66 +17,64 @@
 
 <img src="..\resources\1-blockly\images\gripperUse\blocks.png" style="zoom: 67%;" />
 
-我们将用到以下积木块
+  * We will use the following building blocks
 
-**1**: `设置夹爪状态`：使夹爪以指定的速度进入指定的状态（张开或闭合）
+    **1**: `Set Gripper State`: Make the gripper enter the specified state (open or closed) at the specified speed
 
-  参数介绍：
+       Parameter introduction:
 
-  该模块有两个可以调整的参数：
+       This module has two parameters that can be adjusted:
 
-  * 夹爪状态参数：闭合状态，打开状态
-  * 速度参数：表示旋转的速度，取值范围0~100
-  * 夹具类型参数：此处选择自适应夹爪
+       * Clamp status parameters: closed state, open state
+       * Speed parameter: indicates the speed of rotation, the value range is 0~100
+       * Clamp type parameter: Select adaptive gripper here
 
+    
 
+      **2**: `Set Gripper Value`: Make the gripper reach the specified position at the specified speed
 
- **2**: `设置夹爪值`：使夹具以指定的速度到达指定的位置
+       Parameter introduction:
 
-  参数介绍：
+       This module has two parameters that can be adjusted:
 
-  该模块有两个可以调整的参数：
-
-  * 夹爪值参数：表示夹爪要到达的位置，取值范围为 0~100。
-  * 速度参数：表示旋转的速度，取值范围0~100。
-  * 夹具类型参数：此处选择自适应夹爪
-
-
+       * Clamp value parameter: indicates the position that the clamp will reach, and the value range is 0~100.
+       * Speed parameter: indicates the speed of rotation, the value range is 0~100.
+       * Clamp type parameter: Select adaptive gripper here
 
 
 
 
 
 
-#### 小案例
 
-图形代码如下：
+#### Small case
+
+The graphics code is as follows:
 
 <img src="..\resources\1-blockly\images\gripperUse\code.png" style="zoom: 80%;" />
 
 
 
-* 代码的执行效果：
+The execution effect of the code:
 
-  - 控制自适应夹爪以 20 的速度打开
-- 等待 5 秒
-  - 控制自适应夹爪以 20 的速度 到达 值 为 80 的位置
-- 等待 5 秒
-  - 控制自适应夹爪以 20 的速度 到达 值 为 20 的位置
-- 等待 5 秒
-  - 关闭夹爪
+- Control the adaptive gripper to open at a speed of 20
+
+- Wait 5 seconds
+- Control the adaptive gripper to reach the position with a value of 80 at a speed of 20
+- Wait 5 seconds
+- Control the adaptive gripper to reach the position with a value of 20 at a speed of 20
+- Wait 5 seconds
+- Close the jaws
 
 
 
-**注意**:
+**Notice**:
 
-如果您无法从上面的示例中控制夹爪，也许您需要将夹爪模式设置为 透传模式
+If you are unable to control the gripper from the example above, perhaps you need to set the gripper mode to `Transparent Transmission`
 
 <img src="..\resources\1-blockly\images\gripperUse\3.png"  />
 
-设置完后，然后再次运行小案例代码。
-
-
+After setting it up, then run the small case code again.
 
 
 

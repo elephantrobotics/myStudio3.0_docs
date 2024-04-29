@@ -1,18 +1,18 @@
-# 拖动示教的使用
+# Use of drag teaching
 
-*开始之前*
-
-> *1、确保机器已上电*
+> *Before the start*
 >
-> *2、确保机器连接正常*
+> *1. Make sure the machine is powered on*
+>
+> *2. Make sure the machine connection is normal*
 
 
 
-本章介绍如何使用 `blockly` 中的拖动示教功能。
+This chapter introduces how to use the drag teaching function in `blockly`.
 
-是指在操作者的牵引下（牵引末端或者牵引某一个操作臂），操作臂会沿着人的作用力方向移动。
+It means that under the traction of the operator (pulling the end or pulling a certain operating arm), the operating arm will move along the direction of the human force.
 
-这一功能可以很方便地进行规划轨迹（对过程轨迹精度不高的任务），以便操作者记录和复现轨迹，而无需人工编程，降低了对操作者的门槛，提高了效率。
+This function can easily plan trajectories (a task with low process trajectory accuracy), so that operators can record and reproduce trajectories without manual programming, which lowers the threshold for operators and improves efficiency.
 
 
 
@@ -24,22 +24,22 @@
 
 
 
-#### 小案例
+#### Small case
 
-我们将会实现这样一个效果：随意拖动机械臂做一些动作，拖动结束后，机械臂将会执行刚才的动作。相当于轨迹的录制和播放。
+We will achieve such an effect: drag the robotic arm to perform some actions at will. After the drag is completed, the robotic arm will perform the action just now. Equivalent to track recording and playback.
 
-完整代码如下：
+The complete code is as follows:
 
 <img src="..\resources\1-blockly\images\drag_teach\code.png" style="zoom: 64%;" />
 
-代码解释：
+Code explanation:
 
-- 录制轨迹：执行该积木块后，机械臂关节刹车放松，机械臂现在可以被拖动
-- 等待 10 秒（相当于录制了10 秒钟）
-- 暂停录制：机械臂关节刹车锁紧，不可被人力拖动
-- 等待 5 秒
-- 播放轨迹：机械臂开始执行刚才录制的轨迹
-- 等待 10 秒（相当于播放刚才录制的 10 秒钟轨迹）
+- Recording track: After executing this block, the robot arm joint brake is relaxed and the robot arm can now be dragged
+- Wait 10 seconds (equivalent to 10 seconds of recording)
+- Pause recording: The robot arm joints are braked and locked and cannot be dragged by humans.
+- Wait 5 seconds
+- Play track: The robot arm starts executing the track just recorded
+- Wait 10 seconds (equivalent to playing the 10-second track just recorded)
 
 
 ---

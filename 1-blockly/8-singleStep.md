@@ -1,19 +1,19 @@
 # 单步执行
-*开始之前*
-
-> *1、确保机器已上电*
+> *Before the start*
 >
-> *2、确保机器连接正常*
->
-> *3、确保机器处于零位*
+>  *1. Make sure the machine is powered on*
+> 
+>  *2. Make sure the machine connection is normal*
+> 
+>  *3. Make sure the machine is in zero position*
 
-所谓的单步执行，是指：单积木块执行。当工作区存在大量积木块时，我只想执行其中的一个积木块，看看是什么效果。这个时候就可以用到 单步执行
+The so-called single-step execution refers to: execution of a single building block. When there are a lot of building blocks in the workspace, I only want to execute one of them to see what the effect is. At this time, you can use single-step execution
 
-> **单步执行** 按钮 默认处于禁用状态，是不可点击的
+> The **Single Step** button is disabled by default and is not clickable.
 
 
 
-**第一步：**拖动几个`设置关节`积木块进入工作区
+**Step 1:** Drag several `Set Joints` building blocks into the workspace
 
 <img src="..\resources\1-blockly\images\singleStep\send_angle.png" style="zoom:80%;" />
 

@@ -1,36 +1,36 @@
 # ChatGPT
 
-本章介绍如何利用大模型 chatGPT 生成积木块
-
->注意：使用 chatGPT前， 用户需要有chatGPT 的账号并申请openAI 提供的 API Key
+>This chapter introduces how to use the large model chatGPT to generate building blocks
 >
->注册账号地址：[OpenAI Login App](https://chat.openai.com/auth/login)
+>Note: Before using chatGPT, users need to have a chatGPT account and apply for the API Key provided by openAI
 >
->申请API Key 地址：[API keys - OpenAI API](https://platform.openai.com/api-keys)
+>Register account address: [OpenAI Login App](https://chat.openai.com/auth/login)
+>
+>Apply for API Key address: [API keys - OpenAI API](https://platform.openai.com/api-keys)
 >
 
 
 
-#### 使用自然语言指令
+#### Use natural language instructions
 
-点击 `ChatGPT` 按钮，打开GPT 面板
+Click the `ChatGPT` button to open the GPT panel
 
 <img src="..\resources\1-blockly\images\chatGPT\open.png" style="zoom:80%;" />
 
 
 
-打开 chatGPT 面板后，点击设置，输入您的 API Key，点击保存
+After opening the chatGPT panel, click Settings, enter your API Key, and click Save
 
 <img src="..\resources\1-blockly\images\chatGPT\2.png" />
 
 <img src="..\resources\1-blockly\images\chatGPT\3.png" />
 
 
-  > myStudio 仅使用您的API Key 于 ChatGPT 功能模块，不做其它用途，更不会有将您的API Key 上传至服务器的行为。
+  > myStudio only uses your API Key in the ChatGPT function module and does not use it for other purposes, nor does it upload your API Key to the server.
 
 
 
-点击`ChatGPT`，尝试输入指令：关节一 移动到30度的位置。
+Click `ChatGPT` and try to enter the command: move joint 1 to a position of 30 degrees.
 
 <img src="..\resources\1-blockly\images\chatGPT\4.png" />
 
@@ -38,11 +38,11 @@
 
 
 
-点击`生成` 按钮
+Click the `Generate` button
 
 <img src="..\resources\1-blockly\images\chatGPT\generate_btn.png" />
 
-等待ChatGPT响应
+Waiting for ChatGPT response
 
 <img src="..\resources\1-blockly\images\chatGPT\waiting_generate.png" />
 
@@ -50,7 +50,7 @@
 
 
 
-代码生成完毕
+Code generation completed
 
 <img src='..\resources\1-blockly\images\chatGPT\generate_success.png' style="zoom:80%;" />
 
@@ -58,31 +58,29 @@
 
 
 
-#### 如果您不想输入文本，可以使用我们的语音识别功能
+#### If you don't want to enter text, you can use our speech recognition feature
 
 
 
-单击`语音录制`按钮（需要系统的麦克风权限）。
+Click the `Record` button (requires system microphone permission).
 
 <img src="..\resources\1-blockly\images\chatGPT\record_btn.png" />
 
-语音录制中！现在可以说出指令（例如：将关节1移动到30度的位置）
+Voice recording in progress! Commands can now be spoken (for example: move joint 1 to the 30 degree position)
 
 <img src="..\resources\1-blockly\images\chatGPT\recording.png" />
 
 
 
-说完指令后，单击`结束录制`按钮，等待chatGPT的响应。
+After finishing the command, click the `Stop Record` button and wait for the response from chatGPT.
 
 <img src="..\resources\1-blockly\images\chatGPT\waiting_record_response.png" />
 
-  语音识别成功，从chatGPT获取了响应。
+The speech recognition was successful and the response was obtained from chatGPT.
 
 <img src="..\resources\1-blockly\images\chatGPT\record_response.png" />
 
-
-
-现在可以点击`生成` 按钮生成积木块代码了。
+Now you can click the `Generate` button to generate the building block code.
 
 
 

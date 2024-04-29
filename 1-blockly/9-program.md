@@ -1,14 +1,14 @@
-# 程序控制
+# Program Control
 
-*开始之前*
-
-> *1、确保机器已上电*
+> *Before the start*
 >
-> *2、确保机器连接正常*
+> *1. Make sure the machine is powered on*
+>
+> *2. Make sure the machine connection is normal*
 
-本章介绍如何通过`运行面板`来调试积木块代码，实现程序的 暂停、单步执行、停止。
+This chapter introduces how to debug the building block code through the `Run Panel` and realize the pause, single-step execution and stop of the program.
 
-编辑一段控制 机械臂末端 LED 灯颜色变化的程序
+Edit a program that controls the color change of the LED light at the end of the robotic arm
 
 <img src="..\resources\1-blockly\images\program\block.png"  />
 
@@ -16,24 +16,25 @@
 
 
 
-点击`运行`按钮，当运行面板弹出后，马上点击 `暂停`按钮，程序会在执行完第一条指令`time.sleep(5)` 后暂停
+Click the `Run` button. When the run panel pops up, click the `Pause` button immediately. The program will pause after executing the first instruction `time.sleep(5)`
 
 <img src="..\resources\1-blockly\images\program\run.png"  />
 
-程序已暂停。出现下一条要执行的指令`mc.set_color(255,0,0)
+The program has been paused. The next instruction to be executed appears `mc.set_color(255,0,0)
 
-此时：
+at this time:
 
-- 如果点击`恢复`按钮，程序将会自动往下执行；
+- If you click the `Restore` button, the program will automatically execute;
 
-- 如果点击`单步执行`按钮，程序会执行下一条指令，即`mc.set_color(255,0,0)`；
-- 如果点击`停止`按钮，程序会被终止；
+- If you click the `One-Step` button, the program will execute the next instruction, which is `mc.set_color(255,0,0)`;
+- If you click the `Stop` button, the program will be terminated;
 
 
 
-至于接下来如何操作，由您自己决定吧！
+As for what to do next, it’s up to you!
 
 
 ---
 
 [← Previous page](./8-singleStep.md) | [Next page →](./10-gripperUse.md)
+
