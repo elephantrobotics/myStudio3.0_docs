@@ -21,9 +21,9 @@ Click the `ChatGPT` button to open the GPT panel
 
 After opening the chatGPT panel, click Settings, enter your API Key, and click Save
 
-<img src="..\resources\1-blockly\images\chatGPT\2.png" />
+<img src="..\resources\1-blockly\images\chatGPT\enter.png" style="zoom:80%;" />
 
-<img src="..\resources\1-blockly\images\chatGPT\3.png" />
+<img src="..\resources\1-blockly\images\chatGPT\setting.png" style="zoom:80%;" />
 
 
   > myStudio only uses your API Key in the ChatGPT function module and does not use it for other purposes, nor does it upload your API Key to the server.
@@ -32,19 +32,15 @@ After opening the chatGPT panel, click Settings, enter your API Key, and click S
 
 Click `ChatGPT` and try to enter the command: move joint 1 to a position of 30 degrees.
 
-<img src="..\resources\1-blockly\images\chatGPT\4.png" />
-
-<img src="..\resources\1-blockly\images\chatGPT\5.png" />
-
-
+<img src="..\resources\1-blockly\images\chatGPT\command.png" style="zoom:80%;" />
 
 Click the `Generate` button
 
-<img src="..\resources\1-blockly\images\chatGPT\generate_btn.png" />
+<img src="..\resources\1-blockly\images\chatGPT\generate_btn.png" style="zoom:80%;" />
 
 Waiting for ChatGPT response
 
-<img src="..\resources\1-blockly\images\chatGPT\waiting_generate.png" />
+<img src="..\resources\1-blockly\images\chatGPT\5.png" style="zoom:80%;" />
 
 
 
@@ -52,7 +48,7 @@ Waiting for ChatGPT response
 
 Code generation completed
 
-<img src='..\resources\1-blockly\images\chatGPT\generate_success.png' style="zoom:80%;" />
+<img src='..\resources\1-blockly\images\chatGPT\generate_sus.png' style="zoom: 67%;" />
 
 
 
@@ -64,21 +60,23 @@ Code generation completed
 
 Click the `Record` button (requires system microphone permission).
 
-<img src="..\resources\1-blockly\images\chatGPT\record_btn.png" />
+<img src="..\resources\1-blockly\images\chatGPT\record_btn.png" style="zoom:80%;" />
 
-Voice recording in progress! Commands can now be spoken (for example: move joint 1 to the 30 degree position)
 
-<img src="..\resources\1-blockly\images\chatGPT\recording.png" />
+
+Voice recording in progress! Commands can now be spoken (for example: move joint 1 to the 30 degree)
+
+<img src="..\resources\1-blockly\images\chatGPT\recording.png" style="zoom:80%;" />
 
 
 
 After finishing the command, click the `Stop Record` button and wait for the response from chatGPT.
 
-<img src="..\resources\1-blockly\images\chatGPT\waiting_record_response.png" />
+<img src="..\resources\1-blockly\images\chatGPT\5.png" style="zoom:80%;" />
 
 The speech recognition was successful and the response was obtained from chatGPT.
 
-<img src="..\resources\1-blockly\images\chatGPT\record_response.png" />
+<img src="..\resources\1-blockly\images\chatGPT\command.png" style="zoom:80%;" />
 
 Now you can click the `Generate` button to generate the building block code.
 

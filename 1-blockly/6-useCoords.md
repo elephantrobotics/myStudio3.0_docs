@@ -12,9 +12,9 @@ This chapter introduces how to use coordinates to control the robotic arm.
 
 ### Mainly involved APIs:
 
-<img src="..\resources\1-blockly\images\useCoords\send_coords.png" style="zoom: 67%;" />
+<img src="..\resources\1-blockly\images\useCoords\send_coords.png" style="zoom: 80%;" />
 
-**Set coordinates**
+**Set Coord**
 
 - **Prototype**: `send_coords(values,speed)`
 - **Interface Description**: Set multiple coordinates of the robotic arm
@@ -26,7 +26,7 @@ This chapter introduces how to use coordinates to control the robotic arm.
 
 #### Before using coordinate movement for the first time, some operations need to be performed:
 
-- To return the robotic arm to the zero position, please refer to [Controlling the robotic arm to return to zero] (3-littleCase.md)
+- To return the robotic arm to the zero position, please refer to [Controlling the robotic arm to return to zero](3-littleCase.md)
 
 - Set the initial attitude of the robot arm coordinate movement (the machine `J7` needs to be parallel to the ground)
 

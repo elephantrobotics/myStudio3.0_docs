@@ -16,13 +16,13 @@ What is **Quick Movement**? To put it simply, no programming is required, and th
 
 <img src="..\resources\1-blockly\images\quickMove\qm_btn.png" style="zoom:80%;" />
 
-<img src="..\resources\1-blockly\images\quickMove\open.png" style="zoom: 67%;" />
+<img src="..\resources\1-blockly\images\quickMove\open.png" style="zoom: 80%;" />
 
 If no data is all zero, please check whether the robotic arm is connected and whether the robotic arm is normal.
 
 **Step 2:** Try clicking the `-` / `+` buttons to control different joints of the robotic arm.
 
-<img src="..\resources\1-blockly\images\quickMove\puls_minus.png" style="zoom: 67%;" />
+<img src="..\resources\1-blockly\images\quickMove\puls_minus.png" style="zoom: 80%;" />
 
 **Step 3:** Control coordinates.
 
@@ -30,7 +30,7 @@ First, you need to move joint 4 to a position of about -90, as shown below.
 
 Then you can click the `-` / `+` buttons of different coordinate axes to control the coordinates
 
-<img src="..\resources\1-blockly\images\quickMove\move_coords.png" style="zoom: 67%;" />
+<img src="..\resources\1-blockly\images\quickMove\move_coords.png" style="zoom: 80%;" />
 
 For other functions, please check [Quick Move](../2-quickmove/2.1-quickmovefirstuse.md)
 
