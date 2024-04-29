@@ -1,4 +1,4 @@
-# 夹爪的使用
+# Use Gripper
 
 > *Before the start*
 >
@@ -29,7 +29,7 @@ This chapter introduces how to use `blockly` to control the adaptive gripper con
        * Speed parameter: indicates the speed of rotation, the value range is 0~100
        * Clamp type parameter: Select adaptive gripper here
 
-    
+
 
       **2**: `Set Gripper Value`: Make the gripper reach the specified position at the specified speed
 
