@@ -14,14 +14,14 @@
 
 比如：
 
-**错误使用**
+**错误使用**：
+![](..\resources\1-blockly\images\api\error.png)
 
 
 
 
-
-**正确使用**
-
+**正确使用**：
+![](..\resources\1-blockly\images\api\currect.png)
 
 
 

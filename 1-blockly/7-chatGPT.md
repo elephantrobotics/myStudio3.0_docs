@@ -19,7 +19,7 @@
 
 
 
-点击设置，输入您的 API Key，点击保存
+打开 chatGPT 面板后，点击设置，输入您的 API Key，点击保存
 
 <img src="..\resources\1-blockly\images\chatGPT\2.png" />
 

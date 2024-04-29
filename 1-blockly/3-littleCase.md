@@ -18,7 +18,7 @@
 
 <img src="..\resources\1-blockly\images\littleCase\1.png" style="zoom:80%;" />
 
-<img src="..\resources\1-blockly\images\littleCase\2.png" style="zoom:80%;" />
+<img src="..\resources\1-blockly\images\littleCase\zitai.png" style="zoom:80%;" />
 
 
 
