@@ -23,7 +23,7 @@ Click the `blockly` icon, or click the `New File` button to enter the `blockly` 
 >
 > Here, the operation of entering the `blockly` programming page by clicking the `blockly` icon and clicking the `New File` button is equivalent to creating a new workspace.
 
-<img src="..\resources\1-blockly\images\firstUse\3.png" style="zoom:67%;" />
+<img src="..\resources\1-blockly\images\firstUse\3.5.png" style="zoom:67%;" />
 
 
 

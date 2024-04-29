@@ -9,23 +9,23 @@
 
 The so-called single-step execution refers to: execution of a single building block. When there are a lot of building blocks in the workspace, I only want to execute one of them to see what the effect is. At this time, you can use single-step execution
 
-> The **Single Step** button is disabled by default and is not clickable.
+> The **One-Step** button is disabled by default and is not clickable.
 
 
 
-**Step 1:** Drag several `Set Joints` building blocks into the workspace
+**Step 1:** Drag several `Set Joint Angle` building blocks into the workspace
 
 <img src="..\resources\1-blockly\images\singleStep\send_angle.png" style="zoom:80%;" />
 
 
 
-**第二部：**选中 `设置颜色`积木块，观察到 **单步执行** 按钮已被解锁（颜色变为了深色）
+**Step 2:** Select the `Set Joint Angle` building block and observe that the **One-step** button has been unlocked (the color has changed to dark).  x
 
 <img src="..\resources\1-blockly\images\singleStep\select.png" style="zoom:80%;" />
 
 
 
-**第三步：**点击 **单步执行** 按钮，会打开运行面板，点击面板中的`运行`按钮开始执行代码。同时，观察机械臂运动变化。
+**Step 3:** After clicking the **One-step** button, the run panel will open (as shown below). Click the `Run` button in the panel to start executing the code. At the same time, observe the movement changes of the robotic arm.
 
 <img src="..\resources\1-blockly\images\singleStep\run_plane.png" style="zoom:80%;" />
 

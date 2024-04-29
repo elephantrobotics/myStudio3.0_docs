@@ -10,7 +10,15 @@ This chapter introduces how to debug the building block code through the `Run Pa
 
 Edit a program that controls the color change of the LED light at the end of the robotic arm
 
+
+
+use `Set Color`block：
+
 <img src="..\resources\1-blockly\images\program\block.png"  />
+
+
+
+Full code:
 
 <img src="..\resources\1-blockly\images\program\code.png"  />
 

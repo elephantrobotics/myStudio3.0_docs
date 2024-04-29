@@ -27,7 +27,7 @@ This building block is used to control the movement of each joint of the robotic
 
 Since `Mercury A1` except `J6` has a zero point angle of `90`, the zero point angle values of other joints are `0`, so the `J6` of the building block needs to be modified to 90.
 
-<img src="..\resources\1-blockly\images\littleCase\3.png" style="zoom: 67%;" />
+<img src="..\resources\1-blockly\images\littleCase\3.png" style="zoom:80%;" />
 
 <img src="..\resources\1-blockly\images\littleCase\send_coords.png" style="zoom: 67%;" />
 
@@ -35,7 +35,9 @@ Open the first-level category `Basic Programming` in the toolbox, select the sec
 
 The sleep time of 3 seconds means: the program waits for 3 seconds before continuing. Why wait 3 seconds? Because it is necessary to ensure that the robot arm completes the first command action before executing other subsequent actions.
 
-<img src="..\resources\1-blockly\images\littleCase\5.png" style="zoom: 67%;" />
+<img src="..\resources\1-blockly\images\littleCase\5.png" style="zoom: 80%;" />
+
+
 
 <img src="..\resources\1-blockly\images\littleCase\6.png" style="zoom: 67%;" />
 
@@ -63,7 +65,7 @@ The complete code is as follows:
 >
 > - Wait 3 seconds (the machine will finish at zero)
 >
-> - Move joint one (J1) to a position of 20 degrees
+> - Move joint 1 to a position of 20 degrees
 >
 > - wait 3 seconds
 >
