@@ -1,10 +1,10 @@
-# 单步执行
+# Single Step
 > *Before the start*
 >
 >  *1. Make sure the machine is powered on*
-> 
+>
 >  *2. Make sure the machine connection is normal*
-> 
+>
 >  *3. Make sure the machine is in zero position*
 
 The so-called single-step execution refers to: execution of a single building block. When there are a lot of building blocks in the workspace, I only want to execute one of them to see what the effect is. At this time, you can use single-step execution
