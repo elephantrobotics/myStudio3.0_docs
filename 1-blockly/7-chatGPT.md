@@ -19,7 +19,7 @@
 
 
 
-打开 chatGPT 面板后，点击设置，输入您的 API Key，点击保存
+打开 chatGPT 面板后，点击`设置`，输入您的 API Key，点击`保存`按钮
 
 <img src="..\resources\1-blockly\images\chatGPT\2.png" />
 
@@ -30,7 +30,7 @@
 
 
 
-点击`ChatGPT`，尝试输入指令：关节一 移动到30度的位置。
+点击`ChatGPT`，尝试输入指令：一关节移动到30度的位置。
 
 <img src="..\resources\1-blockly\images\chatGPT\4.png" />
 
