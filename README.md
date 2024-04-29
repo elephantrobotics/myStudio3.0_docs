@@ -1,8 +1,8 @@
 # myStudio3.0_docs
 
-## [Model selection]()
+## [Robot selection](./0-community/1-robot_choose.md)
 
-## [Function selection]()
+## [Function selection](./0-community/2-robot_function.md)
 
 - [Blockly](./1-blockly/README.md)
 - [Fast-moving](./2-quickmove/2.1-quickmovefirstuse.md)
