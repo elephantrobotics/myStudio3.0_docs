@@ -20,4 +20,4 @@
 
 ---
 
-[← Previous page](./1-myBlocklyFirstUse.md) | [Next page →](./3-littleCase.md)
+[← Previous page](./1-blocklyFirstUse.md) | [Next page →](./3-littleCase.md)
