@@ -2,9 +2,9 @@
 
 <img src="..\resources\1-blockly\images\myblockly界面.jpg" />
 
-**blockly** is a completely visual modular programming software and a graphical programming language.
+**blockly** is a completely visual modular programming software and can be used for graphical programming.
 
-**blockly** is similar in functionality and design to MIT's children's programming language Scratch.
+**blockly** is similar in functionality and design to MIT's children's programming tool Scratch.
 
 When using **blockly**, users can build code logic by dragging modules. The process is like building blocks.
 

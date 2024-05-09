@@ -248,7 +248,7 @@ Function: Display the current running status of the robot
 
 | Color | meaning |
 | ------------------------ | -------- |
-| <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #5F5F5F; display: inline-block;"></div> | Not connected |
-| <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #97D864; display: inline-block;"></div> | Normal standby |
-| <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #409EFF; display: inline-block;"></div> | Moving |
-| <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #F2442B; display: inline-block;"></div> | Machine exception |
+| ![robot error tip](../resources/0-community/en/unconnect.png) | Not connected |
+| ![robot error tip](../resources/0-community/en/normal.png) | Normal standby |
+| ![robot error tip](../resources/0-community/en/running.png) | Moving |
+| ![robot error tip](../resources/0-community/en/error.png) | Machine exception |
