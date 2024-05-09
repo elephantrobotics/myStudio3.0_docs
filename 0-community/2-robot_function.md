@@ -220,9 +220,10 @@
 
 功能：显示当前机器人的运行状态
 
-| Color                                                                                                                | meaning  |
-| -------------------------------------------------------------------------------------------------------------------- | -------- |
-| <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #5F5F5F; display: inline-block;"></div> | 未连接   |
-| <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #97D864; display: inline-block;"></div> | 正常待机 |
-| <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #409EFF; display: inline-block;"></div> | 正在运动 |
-| <div style="height: 20px; width: 20px; border-radius: 50%; background-color: #F2442B; display: inline-block;"></div> | 机器异常 |
+| Color                                                        | meaning  |
+| ------------------------------------------------------------ | -------- |
+| ![robot error tip](../resources/0-community/en/unconnect.png) | 未连接   |
+| ![robot error tip](../resources/0-community/en/normal.png)   | 正常待机 |
+| ![robot error tip](../resources/0-community/en/running.png)  | 正在运动 |
+| ![robot error tip](../resources/0-community/en/error.png)    | 机器异常 |
+

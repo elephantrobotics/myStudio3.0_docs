@@ -2,9 +2,9 @@
 
 <img src="..\resources\1-blockly\images\myblockly界面.jpg" />
 
-**blockly** 是一个完全可视化模块化编程软件，属于图形化编程语言。
+**blockly** 是一个完全可视化模块化编程软件，可用于图形化编程。
 
-**blockly** 在功能和设计上与 MIT 的儿童编程语言 Scratch 类似。
+**blockly** 在功能和设计上与 MIT 的儿童编程工具 Scratch 类似。
 
 使用 **blockly** 的时候，用户可以通过拖曳模块，来构建代码逻辑，过程很像搭积木。
 
